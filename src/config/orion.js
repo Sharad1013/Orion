@@ -22,10 +22,10 @@ const model = genAI.getGenerativeModel({
 });
 
 const generationConfig = {
-  temperature: 1,
-  topP: 0.95,
-  topK: 64,
-  maxOutputTokens: 8192,
+  temperature: import.meta.env.temprature,
+  topP: import.meta.env.topP,
+  topK: import.meta.env.topK,
+  maxOutputTokens: import.meta.env.maxOutputTokens,
   responseMimeType: "text/plain",
 };
 
